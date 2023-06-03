@@ -1,0 +1,130 @@
+.element{
+    background-color: #C8F3D7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#element-scroll{
+    height: 300px;
+    overflow: auto;
+    background-color: rgb(198, 189, 175);
+    opacity: 0.8;
+    background-image: url(m.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.intro{
+    margin-top: 20vh;
+    background-color: beige;
+}
+
+.intro-text{
+    background-color: beige;
+}
+
+.hover-black:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.hover-cyan:hover{
+    color: rgb(255, 255, 255);
+    background-color: #29414B;
+}
+
+.button-container {
+    position: fixed;
+    z-index: 9999;
+  }
+  
+.pop-out-button {
+display: block;
+padding: 10px;
+background-color: #333;
+color: #fff;
+text-decoration: none;
+  }
+
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+  
+.image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .myButton {
+    background-color: rgb(234, 159, 112);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .myButton:hover {
+    background-color: rgb(222, 120, 176);
+  }
+
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  :root{
+    --col01: rgb(0,0,0);
+    --col02: rgb(70, 70, 70);
+    --col03: rgb(183, 183, 183);
+    --col04: rgb(255, 255, 255);
+    --border: solid 20px var(--col02);
+  }
+  
+  .parallax-wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+  }
+  
+  .p-circles-wrapper{
+    position: relative;
+    height: 200vh;
+    transform-style: preserve-3d;
+  }
+  
+  #circleOne {
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    left: 47.5%;
+    top: 47.5%;
+    border-radius: 5vh;
+    background-color: rgb(42, 165, 159);
+    transform: translateZ(-5px);
+  }
+  #circleTwo {
+    position: absolute;
+    width: 30vh;
+    height: 30vh;
+    left: 35%;
+    top: 35%;
+    border-radius: 15vh;
+    background-color:#C8F3D7;
+    transform: translateZ(-8px);
+  }
+  #circleThree {
+    position: absolute;
+    width: 70vh;
+    height: 70vh;
+    left: 15%;
+    top: 15%;
+    border-radius: 35vh;
+    background-color: aquamarine;
+    transform: translateZ(-13px);
+  }
+
