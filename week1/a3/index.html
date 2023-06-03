@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1,0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+    <style>
+      .fixed-text{
+        position: fixed;
+        top: 10vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        padding: 30px;
+        font-size: xx-large;
+        }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        text-align: center;
+        background-color: transparent;
+        padding: 20px;
+      }
+
+      .header img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      body {
+      background-image: url("cover_page.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      }
+
+      .larger-text {
+        font-size: 30px;
+      }
+
+      video {
+        width: 640px;
+        height: 360px;
+      }
+
+      .fixed-image {
+      position: fixed;
+      top: 18%;
+      left: 97%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      opacity: 80%;
+    }
+
+    .image1 {
+      top: 18%;
+    }
+    .image2 {
+      top: 28%;
+    }
+
+
+    .button-overlay {
+      position: fixed;
+      top: 38%;
+      left: 97%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .image-container {
+      display: flex;
+      align-items: center;
+      background-color: #DAB2A8;
+      padding: 0px;
+    }
+
+    .image-container .image {
+      max-width: 500px;
+      margin-right: 500px;
+    }
+
+    .custom-cursor {
+      cursor: url('m.png'), auto;
+    }
+
+    .button-overlay2 {
+      position: fixed;
+      top: 95%;
+      left: 97%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+
+    </style>
+
+
+    <script>
+      function openPopOutWindow() {
+        var popOutWindow = window.open("", "Pop-out Window", "width=500,height=300");
+        popOutWindow.document.write("<h1>500 Word Reflection</h1>");
+        popOutWindow.document.write("<p>The final project I did is an information design and have different interactions through scrolling. Originally, I was thinking to recreate the scrolling interaction of a website portfolio I like after the first sight, but after trying, I found out it is way more difficult than I thought it would be and there are only 4 days left for me to think of a new one. <br>Due to the time limitation, the idea is not complete and fun enough. I have to say I am not satisfied with the project I did not only because I do not have enough time to finish the coding but also do not have enough time to finalize my idea. Through this experience, I think I should try to change the progress of how I do a project. I usually only prepare one idea at a time and usually need a lot of time to finish it because I like to think while I am doing it rather than having a good plan for it. If there’s any problem that is unable to be solved, and I do not have any backup plan to cover it. And coding is always a thing I have trouble learning, which made the situation worse. So at last, I only add the things I have learned in class and some inspiration from the teacher. I only did some simple scrolling interaction to it and after started doing it, I feel like I chose the wrong topic to do so I still spent a little time filming videos. And I add the buttons and links that I think are important to an information design. And for the color palate, I originally was thinking to stick on the color that I used in the assignments before, but I feel blue do not fit the color of the song that well so this time I just use colors that are used in the music video and the poster of the voice drama.<br>I have to say that I am glad that I applied for an extension to have more time to finalize my first project due to my bad body condition, and it turned out to be the time to build a completely new idea, or I have to finish a new website within one day, which is definitely an impossible thing for me. The only thing I regret is that I forget to ask shall I apply for 2 more days or even special consideration after I know I have to redo everything. But I am still happy that I start to have some progress in learning coding. I am not that resistant to learning to code and start to remember the basic things, which usually only need 10 minutes to disappear in my brain. I even feel a little fun at some point. I feel like it is because I had more practice this time and because of this time I learn it in English and tried to understand the logic and the name of it. I think I will start to try building my portfolio website not only because I accidentally had the course for it last semester but also because to keep getting in touch with it so I will not forget everything again.</p>");
+      }
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <div class="custom-cursor">
+
+    <div class="fixed-text">
+      <h1>シャルル</h1>
+    </div>
+
+    <a href="https://www.nicovideo.jp/watch/sm29822304" target="_blank">
+    <img src="nico.png" class="fixed-image image1" alt="Image1"></a>
+
+    <a href="https://youtu.be/VUIEJu4ZSUo" target="_blank">
+      <img src="youtube.png" class="fixed-image image2" alt="Image2"></a>
+
+    <button class="button-overlay button-container myButton" onclick="openPopOutWindow()">Reflection</button>
+
+
+
+    <div class="intro-text">
+      <h2 class="intro">Introduction</h2>
+
+        <p><strong>シャルル</strong> (Charles) is a song created by バルーン(Barun)in his second album “Corridor”
+           released in 2016. He used V Flower to generate the vocal and also released a version 
+           of himself covering it. </p>
+        <p>It is a song about although the character paid a lot of effort into maintaining the relationship with 
+           his lover but still ends up breaking up.</p>
+        <p>On April 24, 2023, a voice drama based on the story of the song was released and featured by 伊東健人 
+           and 原紗友里.</p>
+
+    </div>
+
+    <div class="v1-bgd">
+      <video src="bgd.mp4" controls></video>
+    </div>
+
+    <div class="v2-prosega">
+      <video src="prosega.mp4" controls></video>
+    </div>
+
+    <div class="v3-maimai">
+      <video src="maimai.mp4" controls></video>
+    </div>
+
+
+
+
+    <section id="element-scroll">
+      <h4>
+        Lyrics
+      </h4>
+
+      <div class="parallax-wrapper">
+
+        <div class="p-circles-wrapper">
+          <div id="circleThree"></div>
+          <div id="circleTwo"></div>
+          <div id="circleOne"></div>
+
+      <p>さよならはあなたから言った</p>
+      <p>それなのに頬を濡らしてしまうの</p>
+      <p>そうやって昨日の事も消してしまうなら</p>
+      <p class="hover-black">もういいよ 笑って</p>
+        <br>
+      <p>花束を抱えて歩いた</p>
+      <p>意味もなく</p>
+      <p>ただ街を見下ろした</p>
+      <p>こうやって理想の縁に心を置き去っていく</p>
+      <p>もういいか</p>
+        <br>
+      <p class="hover-black">空っぽでいよう それでいつか</p>
+      <p class="hover-cyan">深い青で満たしたのならどうだろう</p>
+      <p>こんな風に悩めるのかな</p>
+        <br>
+      <p>愛を<span class="larger-text">謳</span>って<span class="larger-text">謳</span>って雲の上</p>
+      <p class="hover-black">濁りきっては見えないや</p>
+      <p>嫌 <span class="larger-text">嫌</span> 遠く描いてた日々を</p>
+      <p><span class="larger-text">語</span>って<span class="larger-text">語</span>って夜の群れ</p>
+      <p>いがみ合ってきりがないな</p>
+      <p class="hover-black"><span class="larger-text">否</span> <span class="larger-text">否</span> 笑い合ってさよなら</p>
+        <br>
+      <p>朝焼けとあなたの溜息</p>
+      <p>この街は僕等の夢を見てる</p>
+      <p>今日だって互いの事を忘れていくんだね</p>
+      <p class="hover-black">ねえ そうでしょ</p>
+        <br>
+      <p>黙っていよう それでいつか</p>
+      <p>苛まれたとしても</p>
+      <p>別に良いんだよ</p>
+      <p>こんな憂いも意味があるなら</p>
+      <br>
+      <p>恋と<span class="larger-text">飾</span>って <span class="larger-text">飾</span>って 静かな方へ</p>
+      <p>汚れきった言葉を</p>
+      <p class="hover-black">今<span class="larger-text">今</span><span class="larger-text">今</span> 「此処には誰もいない」「ええ、そうね」</p>
+      <p><span class="larger-text">混</span>ざって  <span class="larger-text">混</span>ざって 二人の果て</p>
+      <p>譲り合って何もないな</p>
+      <p>否 <span class="larger-text">否</span> 痛みだって教えて</p>
+        <br>
+      <p>きっときっとわかっていた</p>
+      <p>騙し合うなんて馬鹿らしいよな</p>
+      <p>ずっとずっと迷っていた</p>
+      <p>ほらね 僕等は変われない</p>
+      <p>そうだろう</p>
+      <p class="hover-black">互いのせいで今があるのに</p>
+        <br>
+      <p>愛を謳って謳って雲の上</p>
+      <p class="hover-black">濁りきっては見えないや</p>
+      <p><span class="larger-text">嫌</span> <span class="larger-text">嫌</span> 日に日に増えていた後悔を</p>
+      <p><span class="larger-text">語</span>って<span class="larger-text">語</span>って夜の群れ</p>
+      <p>許し合って意味もないな</p>
+      <p>否 <span class="larger-text">否</span> <span class="larger-text">否</span></p>
+      <p>愛を<span class="larger-text">謳</span>って <span class="larger-text">謳</span>って 雲の上</p>
+      <p><span class="larger-text">語</span>って<span class="larger-text">語</span>って夜の群れ</p>
+      <p class="hover-black">哂い合ってさよなら</p>
+
+    </div>
+  
+  </div>
+    </section>
+
+      <br>
+
+    <div class="image-container container">
+    <a href="https://charles-audio-drama.lnk.to/elegy" target="_blank">
+    <img src="b2.jpg"></a>
+    <div class="background-content"></div>
+    </div>
+
+    <button class="button-overlay2 button-container2 myButton" onclick="goToTop()" id="scrollToTopBtn">Back to Top</button>
+
+
+    </div>
+
+  </body>
+
+</html>
