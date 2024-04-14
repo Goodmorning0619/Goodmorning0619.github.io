@@ -1,0 +1,24 @@
+body {
+  font-size: 1.2 rem;
+  background-color: #ffe1f5;
+  font-family: "itim";
+  color: #a086d2;
+}
+
+h1 {
+  color: #f2bae4;
+  background-color: #380c57;
+  text-align: center;
+}
+
+h2 {
+  color: #7b5795;
+  background-color: #fdf4ff;
+}
+
+img {
+  width: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
