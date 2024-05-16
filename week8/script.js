@@ -33,3 +33,6 @@ function toggleSound() {
     myVideo.muted = true;
   }
 }
+
+const step1Button = document.querySelector("#step-1-button");
+console.log(step1Button);
