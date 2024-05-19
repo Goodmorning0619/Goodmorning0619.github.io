@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>A2-Media Player</title>
     <!-- add the font family of your choice -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
@@ -12,16 +12,12 @@
   <body>
     <!-- Header Section -->
     <header>
-      <h1>Media Player Website</h1>
+      <h1>Music Video</h1>
     </header>
 
     <!-- Navigation Section -->
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Playlists</a></li>
         <!-- Add or remove navigation items as needed -->
       </ul>
     </nav>
@@ -31,10 +27,7 @@
       <!-- Media Player Section -->
       <div class="media-player">
         <video id="custom-video-player" controls>
-          <source
-            src="harha - 人生オーバー(Music Video).mp4"
-            type="video/mp4"
-          />
+          <source src="miac.mp4" type="video/mp4" />
         </video>
         <div class="custom-controls">
           <button id="play-pause-btn" onclick="togglePlayPause()">
@@ -47,8 +40,17 @@
             />
           </button>
           <!-- add the missing buttons or functionality here -->
-          <div class="progress-bar">
+          <button id="mute-unmute-buttton" onclick="toggleAudio">
+            <img
+              id="mute-unmute-img"
+              src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+              alt="Mute Button"
+              width="24"
+              height="24"
+            />
             <span id="progress-bar-fill"></span>
+            <audio src="pop.mp3" id="pop-sound"></audio>
+            
           </div>
         </div>
       </div>
@@ -57,6 +59,16 @@
       <section>
         <h2>Additional Content</h2>
         <p>This is where you can showcase any other relevant content.</p>
+        <button id="like-buttton">
+          <img
+            id="like-img"
+            src="https://img.icons8.com/ios-filled/50/facebook-like.png"
+            alt="Like Button"
+            width="24"
+            height="24"
+          />
+        </button>
+        <span>Total likes: <span id="likes"></span></span>
         <!-- Add more content as needed -->
       </section>
     </main>
@@ -70,4 +82,25 @@
       <a href="https://icons8.com">Icons8</a>
     </footer>
   </body>
+
+  <!-- I am very dissatisfied with this assignment and regret not applying for an extension
+        in the end. Recently, my health has been very poor, with recurring fevers and body aches that
+        have prevented me from properly completing the assignment. I need to honestly say that this
+        assignment has been a failure. Before clearly understanding the assignment requirements, I
+        actually chose a video design that I liked a lot. However, after carefully reading the assignment
+        requirements, I realized that I initially misunderstood. Then, among many choices, I selected my
+        favorite music video for this assignment.
+
+      In terms of colors, I chose similar colors to those in the video for the background to make the
+        whole webpage look more harmonious. If I had more time, I would like to add the video to the
+        background and blur it, as I feel this would create a better visual effect. For the interactive
+        design part, I tried to add functions that I usually enjoy when watching videos, but they all
+        seemed to fail. I tried to fix it many times but still couldn't find the problem. I also wanted
+        to add sound effects to the buttons to add a bit of surprise, but it did not work as I had hoped.
+      
+       I am very sorry for my performance in this assignment. I did not anticipate that my illness would
+         become so severe, so I did not apply for an extension in advance, which has now led to an irreparable
+        situation.
+ -->
+
 </html>
