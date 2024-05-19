@@ -2,10 +2,9 @@ const video = document.querySelector("#custom-video-player");
 const playPauseBtn = document.querySelector("#play-pause-btn");
 const playPauseImg = document.querySelector("#play-pause-img");
 const progressBar = document.querySelector("#progress-bar-fill");
-const popSound = document.querySelector("#pop-sound");
 console.log(popSound);
 video.removeAttribute("controls");
-// playPauseBtn.addEventListener("click", togglePlayPause);
+playPauseBtn.addEventListener("click", togglePlayPause);
 video.addEventListener("timeupdate", updateProgressBar);
 function togglePlayPause() {
   if (video.paused || video.ended) {
@@ -15,10 +14,6 @@ function togglePlayPause() {
     video.pause();
     playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
   }
-}
-
-function popIt() {
-  popSound.play();
 }
 
 function updateProgressBar() {
@@ -53,4 +48,16 @@ likes.textContent = likeCount;
 function addLikes() {
   likeCount++;
   likes.textContent = likeCount;
+}
+
+const popButton = document.querySelector("#pop-button");
+console.log(popButton);
+
+const popSound = document.querySelector("#pop-sound");
+console.log(popSound);
+
+popButton.addEventListener("click", popIt);
+
+function popIt() {
+  popSound.play();
 }
