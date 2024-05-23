@@ -44,4 +44,125 @@ button {
 button:hover {
   background-color: rgb(27, 56, 110);
   scale: 1.2;
+  rotate: 10deg;
+}
+
+input {
+  padding: 10px;
+  border: 6px solid lime;
+  border-radius: 15px;
+  transition: border-color 0.5s linear;
+}
+
+input:hover {
+  border-color: red;
+}
+
+.fill-icon {
+  cursor: pointer;
+  transition: fill 0.8s linear;
+}
+
+.fill-icon:hover {
+  fill: blue;
+}
+
+.duck-icon {
+  /*transition: scale 0.5s ease;*/
+  /*transition: scale 0.7s ease;*/
+  animation: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.duck-icon:hover {
+  /*scale: 1.2;*/
+  translate: 0px -40px;
+}
+
+@keyframes bounce {
+  0% {
+    translate: 0px 0px;
+  }
+  50% {
+    translate: 0px -40px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+.box {
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  animation-name: color-switch;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border-width: 6px;
+}
+
+@keyframes color-switch {
+  0% {
+    background-color: purple;
+  }
+  20% {
+    background-color: lime;
+  }
+  40% {
+    background-color: blue;
+  }
+  60% {
+    background-color: coral;
+  }
+  80% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+
+@keyframes border-switch {
+  0% {
+    border-color: purple;
+  }
+  20% {
+    border-color: lime;
+  }
+  40% {
+    border-color: blue;
+  }
+  60% {
+    border-color: coral;
+  }
+  80% {
+    border-color: yellow;
+  }
+  100% {
+    border-color: purple;
+  }
+}
+
+.spiner {
+  width: 120px;
+  height: 120px;
+  border: 6px solid cornsilk;
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-top-color: crimson;
+  border-radius: 50%;
+}
+
+@keyframes loading {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
