@@ -1,0 +1,39 @@
+body {
+  padding: 0%;
+  background-color: #51bcf3;
+  font-size: 16px;
+  line-height: 1.2rem;
+}
+
+.secondary-header {
+  position: fixed;
+  top: 10;
+  height: 70px;
+  width: 100%;
+  background-color: #a9f03d;
+  display: flex;
+  justify-content: center;
+  box-shadow: 3px 3px #0c7335;
+}
+
+.secondary-header button {
+  padding: 20px;
+  text-align: center;
+  margin-right: 10px;
+  background-color: #a9f03d;
+  border: none;
+  cursor: pointer;
+  color: black;
+  min-width: 130px;
+}
+
+.secondary-header button:hover {
+  background-color: #0c7335;
+}
+
+.db-button {
+  position: fixed;
+  display: flex;
+  width: 10px;
+  height: 10px;
+}
