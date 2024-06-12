@@ -16,12 +16,38 @@
       <button>my best</button>
       <button>10 latest songs</button>
     </header>
-    <div class="circle-container slider-container">
-      <button class="circle-button circle-button-3 next" onclick="nextImage()">
+    <div class="circle-container slideshow-container">
+      <!-- <div class="mySlides fade">
+        <img src="c.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="m.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="t.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="b.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="d.jpg" style="width: 100%" />
+      </div> -->
+
+      <button
+        class="circle-button circle-button-3 next"
+        onclick="plusSlides(1)"
+      >
         R
       </button>
       <button class="circle-button circle-button-4">detail</button>
-      <button class="circle-button circle-button-6 prev" onclick="prevImage()">
+      <button
+        class="circle-button circle-button-6 prev"
+        onclick="plusSlide(-1)"
+      >
         L
       </button>
     </div>

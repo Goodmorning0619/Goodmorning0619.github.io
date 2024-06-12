@@ -79,3 +79,18 @@ body {
   top: 65%;
   transform: translateY(-50%);
 }
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ffffff00;
+}
