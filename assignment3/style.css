@@ -36,13 +36,13 @@ body {
 }
 
 .circle-container {
-  width: 400px;
-  height: 400px;
+  width: 580px;
+  height: 580px;
   border-radius: 50%;
   background-image: url(image.jpg);
   background-size: cover;
   background-position: 51.8%;
-  margin-top: 200px;
+  margin-top: 120px;
 }
 
 #circle-img {
@@ -64,19 +64,23 @@ body {
 }
 
 .circle-button-3 {
-  right: 2%;
-  top: 63%;
+  right: 30%;
+  top: 73%;
   transform: translateY(-50%);
 }
 
 .circle-button-4 {
-  bottom: 6%;
-  right: 17%;
+  bottom: 11%;
+  right: 32%;
   transform: translateX(-50%);
 }
 
 .circle-button-6 {
-  left: 6%;
-  top: 65%;
+  left: 30%;
+  top: 74%;
   transform: translateY(-50%);
+}
+
+.song-list {
+  background-color: transparent;
 }
